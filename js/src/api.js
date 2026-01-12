@@ -3,7 +3,7 @@
 
 
 // Configuration
-const API_KEY = window.GEMINI_API_KEY || "AIzaSyDb_tjgY0-2B2S8Xn3iaeQ_pr3FSzV3dPg";
+const API_KEY = window.GEMINI_API_KEY || "";
 const SYSTEM_PROMPT = "You are a helpful Travel Assistant. Answer only travel-related questions.";
 const TEMPERATURE = 0.7;
 const MAX_OUTPUT_TOKENS = 200;
