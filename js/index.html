@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f59e0b">
+    <meta name="description" content="TravelPro - Book Your Next Journey with our AI-powered travel assistant">
+    <meta name="keywords" content="travel, tours, hotels, booking, vacation, AI assistant">
+    <meta name="author" content="TravelPro">
+    <title>TravelPro - Book Your Next Journey (Vanilla JS)</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/icon-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white font-sans antialiased">
+
+    <header id="main-header" class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="#" class="text-3xl font-bold text-gray-900 flex items-center">
+                <i class="fas fa-plane text-yellow-500 mr-2"></i>
+                <span class="text-yellow-500">Travel</span><span class="text-gray-900">Pro</span>
+            </a>
+            
+            <nav id="desktop-menu" class="hidden lg:flex space-x-8">
+                <a href="#tours" class="text-gray-600 hover:text-yellow-500 font-medium transition">Tours</a>
+                <a href="#hotels" class="text-gray-600 hover:text-yellow-500 font-medium transition">Hotels</a>
+                <a href="#guides" class="text-gray-600 hover:text-yellow-500 font-medium transition">Guides</a>
+                <a href="#faq" class="text-gray-600 hover:text-yellow-500 font-medium transition">FAQ</a>
+                <a href="#contact" class="text-gray-600 hover:text-yellow-500 font-medium transition">Contact</a>
+            </nav>
+            
+            <button id="get-started-btn" class="hidden lg:block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-2 px-4 rounded-lg transition duration-300 shadow-md">Get Started</button>
+            
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 hover:text-yellow-500">
+                <i class="fas fa-bars w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="lg:hidden bg-white shadow-xl absolute w-full hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#tours" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-yellow-500">Tours</a>
+                <a href="#hotels" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-yellow-500">Hotels</a>
+                <a href="#guides" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-yellow-500">Guides</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-yellow-500">FAQ</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-yellow-500">Contact</a>
+                <button class="w-full mt-2 py-2 text-base bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold rounded-lg shadow-md">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section id="hero-slider" class="relative h-[60vh] md:h-[70vh] overflow-hidden" aria-label="Hero Image Slider">
+            <!-- Slider will be initialized here by JavaScript -->
+        </section>
+
+        <section id="tours" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Our Featured Tours</h2>
+                <div id="featured-tours-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Tours Search Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-8">Search Tours</h2>
+                
+                <div class="max-w-xl mx-auto mb-10 relative">
+                    <input
+                        type="text"
+                        id="tour-search-input"
+                        placeholder="Search tours by name, description, or duration (e.g., Paris, Beach, 7 days)"
+                        class="w-full p-4 border border-gray-300 rounded-full shadow-lg pr-12 focus:ring-yellow-500 focus:border-yellow-500 transition"
+                        aria-label="Search tours"
+                    />
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                
+                <div id="search-results-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Tours Slider Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Popular Tours</h2>
+                <div id="tours-slider" class="relative h-[400px] overflow-hidden">
+                    <!-- Tours slider will be initialized here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Destination Highlights Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Explore Popular Destinations</h2>
+                <div id="destinations-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Destinations will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Top Categories of Tours</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">Adventure</p></div>
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">Relaxation</p></div>
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">Cultural</p></div>
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">City Breaks</p></div>
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">Honeymoon</p></div>
+                    <div class="p-4 bg-white rounded-xl text-center shadow-md hover:shadow-lg transition cursor-pointer"><p class="font-semibold text-gray-800">Wildlife</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels Section -->
+        <section id="hotels" class="py-16 bg-yellow-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Featured Hotels</h2>
+                
+                <!-- Hotels Search Section -->
+                <div class="max-w-xl mx-auto mb-10 relative">
+                    <input
+                        type="text"
+                        id="hotel-search-input"
+                        placeholder="Search hotels by name or location (e.g., Paris, Bali)"
+                        class="w-full p-4 border border-gray-300 rounded-full shadow-lg pr-12 focus:ring-yellow-500 focus:border-yellow-500 transition"
+                        aria-label="Search hotels"
+                    />
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                
+                <div id="hotels-search-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    </div>
+                
+                <div id="hotels-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Hotels Slider Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Popular Hotels</h2>
+                <div id="hotels-slider" class="relative h-[400px] overflow-hidden">
+                    <!-- Hotels slider will be initialized here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Slider Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">What Our Customers Say</h2>
+                <div id="testimonials-slider" class="relative h-[400px] overflow-hidden">
+                    <!-- Testimonials slider will be initialized here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-4xl mx-auto bg-gray-900 text-white p-8 rounded-xl shadow-2xl my-16">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <h3 class="text-3xl font-bold">Join Our Newsletter</h3>
+                <p class="text-lg text-gray-300 hidden md:block">Get the latest travel deals and tips delivered to your inbox.</p>
+            </div>
+            <form id="subscribe-form" class="mt-6 flex flex-col sm:flex-row gap-4">
+                <input
+                    type="email"
+                    id="subscribe-email"
+                    placeholder="Enter your email address"
+                    required
+                    class="flex-grow p-4 rounded-lg text-gray-900 border-2 border-transparent focus:border-yellow-500 focus:ring-yellow-500 transition"
+                    aria-label="Email subscription input"
+                />
+                <button type="submit" class="flex-shrink-0 w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md">Subscribe</button>
+            </form>
+            <div id="subscribe-message" role="alert" class="mt-4 p-3 rounded-lg text-center font-medium hidden"></div>
+        </div>
+
+        <section id="guides" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">News, Tips & Guides</h2>
+                
+                <!-- Blog Search Section -->
+                <div class="max-w-xl mx-auto mb-10 relative">
+                    <input
+                        type="text"
+                        id="blog-search-input"
+                        placeholder="Search blog posts by title, author, or content (e.g., Paris, Travel Tips)"
+                        class="w-full p-4 border border-gray-300 rounded-full shadow-lg pr-12 focus:ring-yellow-500 focus:border-yellow-500 transition"
+                        aria-label="Search blog posts"
+                    />
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                
+                <div id="blog-search-results" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    </div>
+                
+                <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
+                <div id="faq-accordion-container" class="max-w-3xl mx-auto border border-gray-200 rounded-xl overflow-hidden shadow-lg">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Get In Touch</h2>
+                <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                                    placeholder="Your full name"
+                                />
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                                    placeholder="your.email@example.com"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="contact-phone"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                                placeholder="+1 (555) 123-4567"
+                            />
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-1">Your Message *</label>
+                            <textarea
+                                id="contact-message"
+                                rows="5"
+                                required
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md">Send Message</button>
+                    </form>
+                    <div id="contact-message-response" role="alert" class="mt-4 p-3 rounded-lg text-center font-medium hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-8">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="#" class="text-3xl font-bold flex items-center mb-4">
+                        <i class="fas fa-plane text-yellow-500 mr-2"></i>
+                        <span class="text-yellow-500">Travel</span><span class="text-white">Pro</span>
+                    </a>
+                    <div class="space-y-2 text-sm">
+                        <p class="flex items-center text-gray-400"><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> 123 Travel St, Wanderlust City</p>
+                        <p class="flex items-center text-gray-400"><i class="fas fa-phone-alt mr-2 text-yellow-500"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div><h5 class="font-bold text-lg mb-4 text-white">Quick Links</h5><ul class="space-y-2 text-gray-400 text-sm"><li><a href="#about-us" class="hover:text-yellow-500 transition">About Us</a></li><li><a href="#guides" class="hover:text-yellow-500 transition">Travel Blog</a></li></ul></div>
+                <div><h5 class="font-bold text-lg mb-4 text-white">Top Destinations</h5><ul class="space-y-2 text-gray-400 text-sm"><li><a href="#" class="hover:text-yellow-500 transition">Europe</a></li><li><a href="#" class="hover:text-yellow-500 transition">Asia</a></li></ul></div>
+                <div><h5 class="font-bold text-lg mb-4 text-white">Legal</h5><ul class="space-y-2 text-gray-400 text-sm"><li><a href="#" class="hover:text-yellow-500 transition">Privacy Policy</a></li><li><a href="#" class="hover:text-yellow-500 transition">Terms of Service</a></li></ul></div>
+            </div>
+            <div class="mt-8 text-center text-gray-400 text-sm">
+                &copy; <span id="current-year"></span> TravelPro. All rights reserved. Built with Vanilla JavaScript.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/app.js" type="module"></script>
+    <script src="./src/chatbot.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Travel Assistant AI Chatbot -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+        <!-- Chatbot Toggle Button -->
+        <button id="chatbot-toggle" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition duration-300">
+            <i class="fas fa-robot text-xl"></i>
+        </button>
+        
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="hidden absolute bottom-20 right-0 w-80 h-96 bg-white rounded-xl shadow-2xl border border-gray-200 flex flex-col transition-all duration-300 transform translate-y-2 opacity-0">
+            <!-- Chat Header -->
+            <div class="bg-yellow-500 text-gray-900 p-4 rounded-t-xl flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-robot mr-2"></i>
+                    <h3 class="font-bold">Travel Assistant AI</h3>
+                </div>
+                <button id="chatbot-close" class="text-gray-700 hover:text-gray-900">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Chat Messages Container -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto bg-gray-50">
+                <div class="mb-4 flex justify-start">
+                    <div class="bg-white rounded-lg p-3 shadow max-w-xs">
+                        <p class="text-gray-700">Hello! I'm your Travel Assistant AI. How can I help you plan your next journey?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Input Area -->
+            <div class="p-4 border-t border-gray-200 bg-white rounded-b-xl">
+                <div class="flex">
+                    <input 
+                        type="text" 
+                        id="chat-input" 
+                        placeholder="Ask about destinations, hotels, or travel tips..." 
+                        class="flex-1 p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                        disabled
+                    />
+                    <button 
+                        id="chat-send" 
+                        class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-2 px-4 rounded-r-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                        disabled
+                    >
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div id="chat-loader" class="hidden mt-2 flex justify-center">
+                    <div class="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-yellow-500"></div>
+                    <span class="ml-2 text-gray-500 text-sm">Thinking...</span>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

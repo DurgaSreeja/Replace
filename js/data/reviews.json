@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "role": "Travel Blogger",
+        "review": "TravelPro made planning my European trip so easy. Their tour guides were knowledgeable and the experiences were unforgettable!",
+        "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
+        "destination": "Swiss Alps",
+        "rating": 5,
+        "date": "2025-10-15"
+    },
+    {
+        "id": 2,
+        "name": "Michael Chen",
+        "role": "Adventure Enthusiast",
+        "review": "The Mountain Hiking Adventure tour exceeded all my expectations. The attention to safety and the breathtaking views were incredible.",
+        "avatar": "https://randomuser.me/api/portraits/men/54.jpg",
+        "destination": "Rocky Mountains",
+        "rating": 5,
+        "date": "2025-09-28"
+    },
+    {
+        "id": 3,
+        "name": "Emma Rodriguez",
+        "role": "Family Traveler",
+        "review": "Our family vacation to Bali was perfectly organized. The kids loved it and we parents could finally relax!",
+        "avatar": "https://randomuser.me/api/portraits/women/68.jpg",
+        "destination": "Bali, Indonesia",
+        "rating": 4,
+        "date": "2025-10-05"
+    },
+    {
+        "id": 4,
+        "name": "David Wilson",
+        "role": "Business Traveler",
+        "review": "As a frequent business traveler, I appreciate the seamless booking process and excellent customer service.",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+        "destination": "Tokyo, Japan",
+        "rating": 5,
+        "date": "2025-10-20"
+    },
+    {
+        "id": 5,
+        "name": "Lisa Thompson",
+        "role": "Solo Traveler",
+        "review": "The Paris City Delight tour was exactly what I needed. Safe, well-organized, and allowed me to explore at my own pace.",
+        "avatar": "https://randomuser.me/api/portraits/women/45.jpg",
+        "destination": "Paris, France",
+        "rating": 4,
+        "date": "2025-10-10"
+    }
+]

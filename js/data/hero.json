@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Unlock your Wanderlust",
+        "subtitle": "Book Your Next Journey",
+        "description": "Discover amazing destinations with our exclusive travel packages",
+        "bg": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=600&q=80",
+        "ctaText": "Explore Tours",
+        "ctaLink": "#tours"
+    },
+    {
+        "id": 2,
+        "title": "Discover Hidden Gems",
+        "subtitle": "Adventure Awaits You",
+        "description": "Experience unique adventures off the beaten path",
+        "bg": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=600&q=80",
+        "ctaText": "View Adventures",
+        "ctaLink": "#tours"
+    },
+    {
+        "id": 3,
+        "title": "Luxury Stays Made Easy",
+        "subtitle": "Your Dream Vacation Starts Here",
+        "description": "Indulge in premium accommodations and exceptional service",
+        "bg": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=600&q=80",
+        "ctaText": "Browse Hotels",
+        "ctaLink": "#hotels"
+    }
+]

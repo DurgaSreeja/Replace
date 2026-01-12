@@ -1,0 +1,48 @@
+/* Add animation for skeleton loaders */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Ensure slider containers have proper height */
+.relative.h-\[400px\].overflow-hidden {
+    height: 400px;
+}
+
+/* Fix for accordion content transition */
+.accordion-content {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+.accordion-content.open {
+    max-height: 500px;
+}
+
+/* Chatbot toggle button animation */
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+#chatbot-toggle {
+    animation: pulse-animation 2s infinite;
+}

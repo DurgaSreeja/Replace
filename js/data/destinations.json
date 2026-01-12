@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Paris, France",
+        "description": "The City of Light awaits with its iconic landmarks, world-class museums, and exquisite cuisine.",
+        "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 12,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "Bali, Indonesia",
+        "description": "Tropical paradise with stunning beaches, lush rice terraces, and vibrant cultural traditions.",
+        "imageUrl": "https://images.unsplash.com/photo-1505228395891-9a51e7f86e1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 8,
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "name": "Swiss Alps, Switzerland",
+        "description": "Majestic mountain ranges perfect for skiing, hiking, and experiencing breathtaking natural beauty.",
+        "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 15,
+        "rating": 4.9
+    },
+    {
+        "id": 4,
+        "name": "Rome, Italy",
+        "description": "Ancient history comes alive in the Eternal City with its iconic ruins and Renaissance art.",
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 10,
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "name": "Santorini, Greece",
+        "description": "Picturesque island with whitewashed buildings, blue-domed churches, and spectacular sunsets.",
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 7,
+        "rating": 4.8
+    },
+    {
+        "id": 6,
+        "name": "Kyoto, Japan",
+        "description": "Traditional temples, beautiful gardens, and historic districts blend with modern city life.",
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "toursCount": 9,
+        "rating": 4.7
+    }
+]

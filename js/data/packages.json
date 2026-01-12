@@ -1,0 +1,62 @@
+[
+    {
+        "id": 101,
+        "name": "Paris City Delight",
+        "description": "Experience the romantic charm of Paris with guided tours of the Eiffel Tower, Louvre, and Notre-Dame.",
+        "price": 999,
+        "duration": "7 days",
+        "rating": 4.8,
+        "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Eiffel Tower", "Louvre Museum", "Seine River Cruise", "Notre-Dame Cathedral"]
+    },
+    {
+        "id": 102,
+        "name": "Tropical Beach Escape",
+        "description": "Relax on pristine beaches with crystal clear waters and enjoy water sports in a tropical paradise.",
+        "price": 1450,
+        "duration": "5 days",
+        "rating": 4.5,
+        "imageUrl": "https://images.unsplash.com/photo-1505228395891-9a51e7f86e1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Private Beach", "Snorkeling", "Spa Treatments", "Sunset Dinner"]
+    },
+    {
+        "id": 103,
+        "name": "Mountain Hiking Adventure",
+        "description": "Challenge yourself with breathtaking mountain trails and enjoy panoramic views from the summit.",
+        "price": 780,
+        "duration": "4 days",
+        "rating": 4.9,
+        "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Guided Hikes", "Mountain Shelters", "Panoramic Views", "Local Cuisine"]
+    },
+    {
+        "id": 104,
+        "name": "Historic Rome Journey",
+        "description": "Discover ancient Rome with visits to the Colosseum, Vatican, and other historic landmarks.",
+        "price": 1100,
+        "duration": "6 days",
+        "rating": 4.7,
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Colosseum", "Vatican City", "Roman Forum", "Trevi Fountain"]
+    },
+    {
+        "id": 105,
+        "name": "Desert Safari Trip",
+        "description": "Experience the magic of the desert with camel rides, sand dunes, and traditional Bedouin camps.",
+        "price": 650,
+        "duration": "3 days",
+        "rating": 4.6,
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Camel Rides", "Sand Dunes", "Sunset Views", "Traditional Dinner"]
+    },
+    {
+        "id": 106,
+        "name": "Northern Lights Expedition",
+        "description": "Chase the Aurora Borealis in the Arctic Circle with expert guides and comfortable accommodations.",
+        "price": 1850,
+        "duration": "5 days",
+        "rating": 4.9,
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+        "highlights": ["Aurora Viewing", "Arctic Activities", "Glass Igloos", "Northern Cuisine"]
+    }
+]

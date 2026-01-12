@@ -1,0 +1,7 @@
+[
+    { "id": 101, "name": "Paris City Delight", "price": 999, "duration": "7 days", "rating": 4.8, "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" },
+    { "id": 102, "name": "Tropical Beach Escape", "price": 1450, "duration": "5 days", "rating": 4.5, "imageUrl": "https://images.unsplash.com/photo-1505228395891-9a51e7f86e1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" },
+    { "id": 103, "name": "Mountain Hiking Adventure", "price": 780, "duration": "4 days", "rating": 4.9, "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" },
+    { "id": 104, "name": "Historic Rome Journey", "price": 1100, "duration": "6 days", "rating": 4.7, "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" },
+    { "id": 105, "name": "Desert Safari Trip", "price": 650, "duration": "3 days", "rating": 4.6, "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" }
+]
