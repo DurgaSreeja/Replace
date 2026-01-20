@@ -1,30 +1,26 @@
 {
-  "name": "javascript-capstone-project",
+  "name": "travel-pro-vanilla-js",
   "version": "1.0.0",
-  "description": "A capstone project for JavaScript module covering JavaScript best practices and core concepts",
-  "main": "index.js",
+  "description": "A front-end travel booking concept built with HTML, CSS, and ES Modules.",
+  "main": "index.html",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run frontend\"",
-    "frontend": "live-server --port=5000",
-    "server": "node server.js",
-    "build": "echo 'No build step required for this vanilla JS app'",
-    "test": "jest"
+    "start": "live-server --port=5000",
+    "dev": "tsc --watch & live-server --port=5000",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Author",
+  "keywords": [
+    "typescript",
+    "frontend",
+    "travel"
+  ],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
-    "@testing-library/jest-dom": "^5.14.1",
-    "babel-jest": "^27.0.6",
-    "concurrently": "^9.2.1",
-    "jest": "^27.0.6",
-    "jsdom": "^16.6.0"
-  },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.27",
+    "typescript": "^5.9.3"
   }
 }

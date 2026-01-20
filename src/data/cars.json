@@ -1,0 +1,5 @@
+[
+{"id":1, "name":"Compact Eco", "desc":"Fuel efficient & comfy.", "image":"https://images.unsplash.com/photo-1542367597-7e8e6f1b8f2b?auto=format&fit=crop&w=800&q=60", "price": 45},
+{"id":2, "name":"SUV Explorer", "desc":"Space for the whole family.", "image":"https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=60", "price": 80},
+{"id":3, "name":"City Compact", "desc":"Easy to park & zippy.", "image":"https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=60", "price": 39}
+]

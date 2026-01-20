@@ -1,0 +1,5 @@
+[
+{"id":1, "title":"Island Hopping Escape", "summary":"3 nights around the pristine islands.", "image":"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60", "price": 249},
+{"id":2, "title":"Mountain Trek Adventure", "summary":"5 days of trekking and camping.", "image":"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60", "price": 399},
+{"id":3, "title":"City Food Crawl", "summary":"Taste local delicacies with a guide.", "image":"https://images.unsplash.com/photo-1498654201561-2d0a3a3b5f4b?auto=format&fit=crop&w=800&q=60", "price": 129}
+]
